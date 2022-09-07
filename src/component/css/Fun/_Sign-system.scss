@@ -1,0 +1,182 @@
+.Sign-System {
+    background-color: white;
+    min-height: 100vh;
+    @include flex-1;
+    flex-direction: column;
+    margin: 0rem 0;
+    // position
+    position: relative;
+
+    .PageRef {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        @include flex-1;
+        display: none;
+
+        .circle {
+            width: 3rem;
+            height: 3rem;
+            background: #333;
+            border-radius: 50%;
+            margin-right: 1rem;
+            @include shadow;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+
+    .col2 {
+        width: 100%;
+        padding: 2rem;
+
+
+        &:last-child {
+            order: -1;
+        }
+
+        .right {
+            margin-bottom: 2rem;
+            @include flex-1;
+            position: relative;
+
+
+            img {
+                width: 7rem;
+                height: 7rem;
+                object-fit: contain;
+            }
+
+
+        }
+
+        .left {
+            .header {
+                text-align: center;
+
+                h1 {
+                    color: var(--black);
+                    font-size: 4rem;
+                    font-weight: 900;
+                }
+
+                p {
+                    font-size: 1.3srem;
+                    color: var(--gray);
+                }
+            }
+
+            .form form {
+                @include flex-1;
+                flex-direction: column;
+                gap: 1rem;
+
+                .inputgroup {
+                    @include flex-1(flex-start);
+                    flex-direction: column;
+                    gap: .8rem;
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        padding-left: 1rem;
+                        border: 1px solid var(--lightblue--primary);
+                        border-radius: .3rem;
+                        @include shadow;
+
+                        &.error {
+                            border-color: var(--red);
+                            color: var(--red);
+
+                            &:focus {
+                                outline: 1px solid var(--red);
+                                border: none;
+                            }
+                        }
+
+                        &:focus {
+                            outline: 1px solid var(--lightblue);
+                            border: none;
+                        }
+                    }
+
+                    label {
+                        font-size: 1.2rem;
+                    }
+
+                    .error {
+                        font-size: 1.2rem;
+                        color: var(--red);
+                    }
+
+                    button {
+                        @include button(100%);
+                        font-size: 1.9rem;
+
+                        &:focus {
+                            background: var(--blue);
+                        }
+
+                        &:active {
+                            background: var(--lightblue);
+                        }
+
+                    }
+
+                    &>.sign-dir {
+                        width: 100%;
+                        text-align: center;
+                        // background: blue;
+
+                    }
+
+                    &>.Forget-dir {
+                        width: 100%;
+                        text-align: right;
+                        // background: blue;
+
+                    }
+
+                    .sign-dir,
+                    .Forget-dir {
+                        font-size: 1.3rem;
+                        color: var(--gray);
+
+                        span {
+                            color: var(--lightred);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.loading {
+    @include flex-1;
+
+    .load {
+        width: 2rem;
+        height: 2rem;
+        border: .4rem double transparent;
+        border-left-color: var(--lightred);
+        border-right-color: var(--lightred);
+        border-bottom-color: var(--lightred);
+        border-radius: 50%;
+        animation: infinite .5s loading;
+
+        @keyframes loading {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

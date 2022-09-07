@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --white: #fff;
+    --whiteGray: #F1F1F1;
+    --gray: #9C9C9C;
+    --banfsag: #5f3db5;
+    --black: #333;
+    --lightblue--primary: #8DC8FF;
+    --lightblue: #59afff;
+    --blue: #2997ff;
+    --red: #ff4747;
+    --lightred: #E1807A;
+
+    // box shadow
+    --shadow-noColor: 1px 4px 15px rgba(0, 0, 0, 0.233);
+}
+
+// roboto font -> ggole font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+
+
+/*flex short cut*/
+@mixin flex-1($a: center, $j: center) {
+    display: flex;
+    align-items: $a;
+    justify-content: $j;
+}
+
+@mixin flex-1-jus {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+}
+
+@mixin flex-1-align {
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+}
+
+
+
+
+// box shadow
+@mixin shadow($shadow: 1px 4px 15px rgba(0, 0, 0, 0.233)) {
+    box-shadow: $shadow;
+}
+
+//postion absolute
+@mixin absolute($top: 0%, $left: 0%, $x: 0, $y: 0) {
+    position: absolute;
+    top: $top+0%;
+    left: $left+0%;
+    transform: translateX(-$left+0%) translateY(-$top+0%);
+}
+
+
+
+// button function
+@mixin button($width: 10,
+    $height: 5,
+    $raduis: .4,
+    $bgcolor: var(--lightblue--primary),
+    $color: var(--white)) {
+    width: $width;
+    height: $height+0rem;
+    border-radius: $raduis+0rem;
+    background-color: $bgcolor;
+    color: $color;
+    border: none;
+    @include flex-1;
+    @include shadow;
+}
+
+
+
+
+// margin bottom class
+// mr -> margin and b -> bottom and 1 -> 1rem
+.mr-b-1 {
+    margin-bottom: 1rem;
+}
+
+.mr-b-2 {
+    margin-bottom: 2rem;
+}
+
+.mr-b-3 {
+    margin-bottom: 3rem;
+}
+
+
+//margin top
+
+.mr-t-1 {
+    margin-top: 1rem;
+}
+
+.mr-t-2 {
+    margin-top: 2rem;
+}
+
+.mr-t-3 {
+    margin-top: 3rem;
+}
+
+
+@import 'Fun/Sign-system';
+@import 'Fun/MideaQ1';
