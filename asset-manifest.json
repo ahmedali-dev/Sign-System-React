@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/Sign-System-React/static/css/main.3d8d15f8.chunk.css",
-    "main.js": "/Sign-System-React/static/js/main.b80945ad.chunk.js",
-    "main.js.map": "/Sign-System-React/static/js/main.b80945ad.chunk.js.map",
+    "main.js": "/Sign-System-React/static/js/main.f3102c1b.chunk.js",
+    "main.js.map": "/Sign-System-React/static/js/main.f3102c1b.chunk.js.map",
     "runtime-main.js": "/Sign-System-React/static/js/runtime-main.099943d2.js",
     "runtime-main.js.map": "/Sign-System-React/static/js/runtime-main.099943d2.js.map",
     "static/css/2.bb94a661.chunk.css": "/Sign-System-React/static/css/2.bb94a661.chunk.css",
-    "static/js/2.1589ac2a.chunk.js": "/Sign-System-React/static/js/2.1589ac2a.chunk.js",
-    "static/js/2.1589ac2a.chunk.js.map": "/Sign-System-React/static/js/2.1589ac2a.chunk.js.map",
+    "static/js/2.6627c23d.chunk.js": "/Sign-System-React/static/js/2.6627c23d.chunk.js",
+    "static/js/2.6627c23d.chunk.js.map": "/Sign-System-React/static/js/2.6627c23d.chunk.js.map",
     "static/js/3.21f9779b.chunk.js": "/Sign-System-React/static/js/3.21f9779b.chunk.js",
     "static/js/3.21f9779b.chunk.js.map": "/Sign-System-React/static/js/3.21f9779b.chunk.js.map",
     "index.html": "/Sign-System-React/index.html",
     "static/css/2.bb94a661.chunk.css.map": "/Sign-System-React/static/css/2.bb94a661.chunk.css.map",
     "static/css/main.3d8d15f8.chunk.css.map": "/Sign-System-React/static/css/main.3d8d15f8.chunk.css.map",
-    "static/js/2.1589ac2a.chunk.js.LICENSE.txt": "/Sign-System-React/static/js/2.1589ac2a.chunk.js.LICENSE.txt"
+    "static/js/2.6627c23d.chunk.js.LICENSE.txt": "/Sign-System-React/static/js/2.6627c23d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.099943d2.js",
     "static/css/2.bb94a661.chunk.css",
-    "static/js/2.1589ac2a.chunk.js",
+    "static/js/2.6627c23d.chunk.js",
     "static/css/main.3d8d15f8.chunk.css",
-    "static/js/main.b80945ad.chunk.js"
+    "static/js/main.f3102c1b.chunk.js"
   ]
 }
